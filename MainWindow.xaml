@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="redBtn">
+            <Setter Property="Background" Value="Cyan"/>
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <!--<Setter Property="CornerRadius" Value="20"></Setter>-->
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Img/fon.jpg" ></ImageBrush>
+        </Grid.Background>
+
+        <DockPanel LastChildFill="True">
+
+            <DockPanel LastChildFill="True" DockPanel.Dock="Top" Background="#FFDFF0F0" Opacity="0.785">
+                <Image Height="25" Width="25" DockPanel.Dock="Left" Source="/Img/Log.png" />
+                <Button Height="25" Width="80" DockPanel.Dock="Left">office 365</Button>
+                <Button Height="25" Width="80" DockPanel.Dock="Left">SharePoint</Button>
+                <Image Height="25" Width="25" Margin="5" DockPanel.Dock="Right" Source="/Img/Prof.png"/>
+                <Image Height="25" Width="25" Margin="5" DockPanel.Dock="Right" Source="/Img/m.png"/>
+                <Image Height="25" Width="25" Margin="5" DockPanel.Dock="Right" Source="/Img/Nastroyki.png"/>
+                <Image Height="25" Width="25" Margin="5" DockPanel.Dock="Right" Source="/Img/Dzvin.png"/>
+                <Image Height="25" Width="25" Margin="5" DockPanel.Dock="Right" Source="/Img/Skype.png"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Foreground="#FF954B4B">Trello</TextBlock>
+            </DockPanel>
+            <DockPanel LastChildFill="True" DockPanel.Dock="Top">
+                <Button Height="25" Width="120" DockPanel.Dock="Left" FontSize="14" FontWeight="Bold">frilance31st9</Button>
+                <Button Height="25" Width="25" DockPanel.Dock="Left"><Image Source="/Img/pharmaceutical_drugs.png" /></Button>
+                <Button Height="25" Width="120" DockPanel.Dock="Left">Add to Workspace</Button>
+                <Button Height="25" Width="80" DockPanel.Dock="Left">Private</Button>
+                <Button Height="25" Width="80" DockPanel.Dock="Right">Show menu</Button>
+                <Button Height="25" Width="80" DockPanel.Dock="Right">Butler</Button>
+                <Button DockPanel.Dock="Right" Opacity="0"></Button>
+                
+            </DockPanel>
+             <Grid>
+                <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="1*"/>
+                     <ColumnDefinition Width="1*"/>
+                     <ColumnDefinition Width="1*"/>
+                     <ColumnDefinition Width="1*"/>
+                     <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                     <RowDefinition/>                        
+                </Grid.RowDefinitions>
+                <DockPanel LastChildFill="True" DockPanel.Dock="Top" Grid.Column="0">
+                    <StackPanel>
+                        <StackPanel Background ="Cyan" Margin="5">
+                            <TextBlock Background ="Coral" Width="147" Margin="5"> Українські сійти</TextBlock>
+                            <TextBlock Background ="Coral" Width="147" Margin="5" TextWrapping="Wrap"> Відправка повідомлень на пошту після оформлення замовлення</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
+                <DockPanel LastChildFill="True" DockPanel.Dock="Top" Grid.Column="1">
+                    <StackPanel>
+                        <StackPanel Background ="Cyan" Margin="5">
+                            <TextBlock Background ="Coral" Width="147" Margin="5">Головна сторінка</TextBlock>
+                            
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>
